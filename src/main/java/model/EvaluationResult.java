@@ -1,6 +1,6 @@
 package model;
-import module.Task;
-import module.Submission;
+import model.Task;
+import model.Submission;
 
 public class EvaluationResult{
     private Submission submission;
