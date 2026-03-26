@@ -1,13 +1,14 @@
-package service;
+package org.example.code_correction_llm.service;
 
-import config.EnvLoader;
+import org.example.code_correction_llm.config.EnvLoader;
 import com.google.gson.*;
+import org.springframework.stereotype.Service;
 
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-
+@Service
 public class LLMService {
 
     //Endpoint von Google Gemini

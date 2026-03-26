@@ -1,4 +1,4 @@
-package config;
+package org.example.code_correction_llm.config;
 import io.github.cdimascio.dotenv.Dotenv;
 public class EnvLoader {
 

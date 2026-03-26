@@ -1,9 +1,18 @@
-package model;
-import model.Task;
-import model.Submission;
+package org.example.code_correction_llm.model;
 
+import jakarta.persistence.*;
+
+@Entity
 public class EvaluationResult{
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @ManyToOne
     private Submission submission;
+
+    @Column(length = 5000)
     private String feedback;
     private int score;
     private boolean passed;
